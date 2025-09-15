@@ -1,0 +1,4 @@
+Sitemap: https://samuelhula.github.io/Samuel_Hula_portfolio/sitemap.xml
+
+User-agent: *
+Allow: /
