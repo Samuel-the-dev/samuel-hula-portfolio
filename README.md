@@ -1,5 +1,6 @@
 ﻿# Samuel Hula Portfolio
 
-<img src="./screenshot.png" width="100%">
+<img src="./images/screenshot.png" width="100%">
+
 
 
