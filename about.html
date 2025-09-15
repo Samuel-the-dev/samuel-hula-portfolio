@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Samuel Hula | O mne</title>
+   <meta name="description" content="Student web developer portfolio page, showing his previous projects and skills.">
+   <meta name="author" content="Samuel Hula">
+   <meta name="copyright" content="Samuel Hula">
+   <meta name="robots" content="index, follow">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="Samuel Hula Portfolio">
+   <meta property="og:url" content="https://samuelhula.github.io/Samuel_Hula_portfolio/">
+   <meta property="og:image" content="https://samuelhula.github.io/Samuel_Hula_portfolio/screenshot.png">
+   <meta property="og:description" content="Student web developer portfolio page, showing his previous projects and skills.">
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="favicon" href=""> <!--TODO add favicon-->
+   <link rel="stylesheet" href="./CSS/general.css">
+   <link rel="stylesheet" href="./CSS/about.css">
+   <script src="./javascript/fly-in.js"></script>
+   <script src="./javascript/line.js"></script>
+</head>
+<body>
+   <div class="progress-container">
+      <div class="progress-bar" id="scrollProgress"></div>
+   </div>
+   <div class="floating-shapes">
+      <div class="shape square"></div>
+      <div class="shape triangle"></div>
+      <div class="shape square"></div>
+      <div class="shape triangle"></div>
+      <div class="shape square"></div>
+      <div class="shape triangle"></div>
+      <div class="shape square"></div>
+      <div class="shape triangle"></div>
+   </div>
+   <header id="header">
+      <a href="#" class="logo">Samuel <span>Hula</span></a>
+      <nav class="nav_bar">
+            <ul>
+               <li><a href="index.html">Domov</a></li>
+               <li><a href="about.html">O mne</a></li>
+               <li><a href="services.html">Služby</a></li>
+               <li><a href="projects.html">Projekty</a></li>
+            </ul>
+      </nav>
+      <a href="index.html#contact" class="contact-btn">Kontaktujte ma</a>
+   </header>
+   <main id="main">
+      <section id="landing_page">
+         <article class="landing_page scroll-effect from-bottom">
+            <h1>O mne</h1>
+            <p>Vitajte na mojej osobnej stránke! Som Samuel, vášnivý webový vývojár a dizajnér so zameraním na tvorbu moderných a funkčných webových riešení. Pozrite sa, čo všetko viem ponúknuť.</p>
+         </article>
+      </section>
+      <section id="about_me">
+         <article class="about_me scroll-effect from-bottom">
+            <div class="section-title">
+               <h2>O mne</h2>
+            </div>
+            <div class="wrapper">
+               <aside class="text scroll-effect from-left">
+                  <p>
+                     Ahoj! Volám sa Samuel, som vášnivý vývojár zo Slovenska so zameraním na tvorbu moderných webových stránok a digitálnych zážitkov. Kombinujem technické znalosti s kreatívnym riešením problémov, aby som dosiahol výnimočné výsledky.
+                  </p>
+                  <p>
+                     S viac ako 5-ročnými profesionálnymi skúsenosťami som spolupracoval so startupmi, agentúrami a podnikmi na budovaní škálovateľných riešení, ktoré podporujú rast podnikania.
+                  </p>
+                  <a href="./docs/resume.pdf" download class="cv-btn">
+                     Stiahnúť CV
+                     <i class="fas fa-download"></i>
+                  </a>
+               </aside>
+               <figure class="image scroll-effect from-right">
+                  <img src="./images/about.png" alt="About me image" title="About me image">
+               </figure>
+            </div>
+         </article>
+      </section>
+      <section class="education-section">
+         <div class="container">
+               <div class="section-title">
+                  <h2>Vzdelanie</h2>
+               </div>
+               
+               <div class="timeline">
+                  <div class="timeline-item">
+                     <div class="timeline-dot"></div>
+                     <div class="timeline-content">
+                           <div class="timeline-date">2021 - Súčasnosť</div>
+                           <h3 class="timeline-school">Stredná Priemyselná škola Jozefa Murgaša</h3>
+                           <p class="timeline-description">
+                              Štúdium odboru Informačné technológie so zameraním na programovanie a webový vývoj. 
+                              Počas štúdia som získal teoretické vedomosti aj praktické skúsenosti v oblasti tvorby webových aplikácií, 
+                              programovania a dizajnu.
+                           </p>
+                           <div class="timeline-skills">
+                              <span class="skill-tag">Webový vývoj</span>
+                              <span class="skill-tag">Programovanie</span>
+                              <span class="skill-tag">Databázy</span>
+                              <span class="skill-tag">UI/UX dizajn</span>
+                           </div>
+                     </div>
+                  </div>
+               </div>
+         </div>
+      </section>
+      <section class="skills-section">
+         <h2>Technické Zručnosti</h2>
+         <div class="skills-grid">
+               <!-- Front-end Skills -->
+               <div class="skill-category">
+                  <div class="category-header">
+                     <div class="category-icon">
+                           <i class="fab fa-js"></i>
+                     </div>
+                     <h3 class="category-title">Front-end</h3>
+                  </div>
+                  
+                  <div class="skill-item">
+                     <div class="skill-info">
+                           <span class="skill-name">HTML5</span>
+                           <span class="skill-percentage">95%</span>
+                     </div>
+                     <div class="skill-bar">
+                           <div class="skill-progress" data-level="95"></div>
+                     </div>
+                  </div>
+                  
+                  <div class="skill-item">
+                     <div class="skill-info">
+                           <span class="skill-name">CSS3/SCSS</span>
+                           <span class="skill-percentage">90%</span>
+                     </div>
+                     <div class="skill-bar">
+                           <div class="skill-progress" data-level="90"></div>
+                     </div>
+                  </div>
+                  
+                  <div class="skill-item">
+                     <div class="skill-info">
+                           <span class="skill-name">JavaScript (ES6+)</span>
+                           <span class="skill-percentage">85%</span>
+                     </div>
+                     <div class="skill-bar">
+                           <div class="skill-progress" data-level="85"></div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Back-end Skills -->
+               <div class="skill-category">
+                  <div class="category-header">
+                     <div class="category-icon">
+                           <i class="fas fa-database"></i>
+                     </div>
+                     <h3 class="category-title">Back-end</h3>
+                  </div>
+                  
+                  <div class="skill-item">
+                     <div class="skill-info">
+                           <span class="skill-name">PHP</span>
+                           <span class="skill-percentage">80%</span>
+                     </div>
+                     <div class="skill-bar">
+                           <div class="skill-progress" data-level="80"></div>
+                     </div>
+                  </div>
+                  
+                  <div class="skill-item">
+                     <div class="skill-info">
+                           <span class="skill-name">MySQL</span>
+                           <span class="skill-percentage">75%</span>
+                     </div>
+                     <div class="skill-bar">
+                           <div class="skill-progress" data-level="75"></div>
+                     </div>
+                  </div>
+                  
+                  <div class="skill-item">
+                     <div class="skill-info">
+                           <span class="skill-name">Node.js</span>
+                           <span class="skill-percentage">70%</span>
+                     </div>
+                     <div class="skill-bar">
+                           <div class="skill-progress" data-level="70"></div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Frameworks & Libraries -->
+               <div class="skill-category">
+                  <div class="category-header">
+                     <div class="category-icon">
+                           <i class="fas fa-layer-group"></i>
+                     </div>
+                     <h3 class="category-title">Frameworks & Libraries</h3>
+                  </div>
+                  
+                  <div class="skill-item">
+                     <div class="skill-info">
+                           <span class="skill-name">React</span>
+                           <span class="skill-percentage">75%</span>
+                     </div>
+                     <div class="skill-bar">
+                           <div class="skill-progress" data-level="75"></div>
+                     </div>
+                  </div>
+                  
+                  <div class="skill-item">
+                     <div class="skill-info">
+                           <span class="skill-name">jQuery</span>
+                           <span class="skill-percentage">70%</span>
+                     </div>
+                     <div class="skill-bar">
+                           <div class="skill-progress" data-level="70"></div>
+                     </div>
+                  </div>
+                  
+                  <div class="skill-item">
+                     <div class="skill-info">
+                           <span class="skill-name">Laravel</span>
+                           <span class="skill-percentage">65%</span>
+                     </div>
+                     <div class="skill-bar">
+                           <div class="skill-progress" data-level="65"></div>
+                     </div>
+                  </div>
+               </div>
+         </div>
+         
+         <div class="skills-overview">
+               <div class="overview-item">
+                  <div class="overview-number">10+</div>
+                  <div class="overview-text">Technológií</div>
+               </div>
+               <div class="overview-item">
+                  <div class="overview-number">5+</div>
+                  <div class="overview-text">Rokov Skúseností</div>
+               </div>
+               <div class="overview-item">
+                  <div class="overview-number">15+</div>
+                  <div class="overview-text">Projektov</div>
+               </div>
+               <div class="overview-item">
+                  <div class="overview-number">100%</div>
+                  <div class="overview-text">Zanietený</div>
+               </div>
+         </div>
+      </section>
+   </main>
+   <footer id="footer">
+      <a href="index.html#landing_page" class="back-to-top">
+         <i class="fas fa-arrow-up"></i>
+      </a>
+      <div class="footer-grid">
+         <div class="footer-col footer-about">
+            <a href="#" class="footer-logo">Samuel <span>Hula</span></a>
+            <p>Slovak web developer & digital creator focused on building modern, responsive web applications with cutting-edge technologies.</p>
+            <div class="social-icons">
+               <a href="https://www.linkedin.com/in/samuel-hula/"><i class="fab fa-linkedin-in"></i></a>
+               <a href="https://github.com/SamuelHula"><i class="fab fa-github"></i></a>
+               <a href="https://www.instagram.com/samohula/"><i class="fab fa-instagram"></i></a>
+               <a href="https://www.facebook.com/samo.hula/"><i class="fab fa-facebook"></i></a>
+            </div>
+         </div>
+         <div class="footer-col footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+               <li><a href="index.html#about_me"><i class="fas fa-chevron-right"></i> About Me</a></li>
+               <li><a href="index.html#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+               <li><a href="index.html#portfolio"><i class="fas fa-chevron-right"></i> Projects</a></li>
+               <li><a href="index.html#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+               <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+            </ul>
+         </div>
+         <div class="footer-col footer-contact">
+            <h4>Contact</h4>
+            <ul>
+               <li>
+                  <i class="fab fa-instagram"></i>
+                  <span><strong>Instagram: </strong><a href="https://www.instagram.com/samohula/">@samohula</a></span>
+               </li>
+               <li>
+                  <i class="fas fa-envelope"></i>
+                  <span><strong>Email: </strong><a href="mailto:samko.hula@gmail.com">samko.hula@gmail.com</a></span>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         <div class="copyright">
+            &copy; 2025 Samuel Hula. All Rights Reserved.
+         </div>
+      </div>
+   </footer>
+   <script>
+      document.addEventListener('DOMContentLoaded', function() {
+         // Animate skill bars on page load
+         const skillBars = document.querySelectorAll('.skill-progress');
+         
+         skillBars.forEach(bar => {
+               const level = bar.getAttribute('data-level');
+               bar.style.width = level + '%';
+         });
+         
+         // Add intersection observer for scroll animation
+         const overviewItems = document.querySelectorAll('.overview-item');
+         
+         const observer = new IntersectionObserver((entries) => {
+               entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                     entry.target.style.opacity = 1;
+                     entry.target.style.transform = 'translateY(0)';
+                  }
+               });
+         }, { threshold: 0.1 });
+         
+         // Set initial state for overview items
+         overviewItems.forEach(item => {
+               item.style.opacity = 0;
+               item.style.transform = 'translateY(20px)';
+               item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+               observer.observe(item);
+         });
+      });
+   </script>
+</body>
+</html>
