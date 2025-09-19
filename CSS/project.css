@@ -221,9 +221,6 @@
    section {
       padding: 5% 10%;
    }
-   #header {
-      padding: 0 10%;
-   }
    .project, .project.reverse {
       flex-direction: column;
    }

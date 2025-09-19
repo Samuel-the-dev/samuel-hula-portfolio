@@ -423,12 +423,6 @@
    .services-grid {
       grid-template-columns: 1fr;
    }
-   h2 {
-      font-size: 1.8rem;
-   }
-   section {
-      padding: 10% 5%;
-   }
 }
 /* Gallery Section */
 .gallery-grid {
@@ -570,7 +564,7 @@
       font-size: 1.8rem;
    }
    section {
-      padding: 10% 5%;
+      padding: 5%;
    }
    .project-card {
       height: 250px;
