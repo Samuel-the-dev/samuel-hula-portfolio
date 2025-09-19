@@ -200,7 +200,6 @@
    background: rgba(230, 57, 70, 0.15);
    color: var(--accent-red);
    padding: 5px 15px;
-   border-radius: 20px;
    font-size: 0.9rem;
 }
 /* Responsive adjustments */
@@ -290,12 +289,10 @@
 .skill-bar {
    height: 8px;
    background: rgba(255, 255, 255, 0.1);
-   border-radius: 4px;
    overflow: hidden;
 }
 .skill-progress {
    height: 100%;
-   border-radius: 4px;
    background: linear-gradient(90deg, var(--accent-red));
    position: relative;
    width: 0;
