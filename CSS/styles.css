@@ -99,11 +99,6 @@
    display: flex;
    justify-content: center;
    align-items: center;
-
-   /* background-color: white; */
-
-   border-radius: 15px;
-
    position: absolute;
    left: max(calc(300px *8), 100%);
    animation: scrollLeft 30s linear infinite;
@@ -271,14 +266,12 @@
    width: 100%;
    height: 10px;
    background: rgba(255, 255, 255, 0.1);
-   border-radius: 5px;
    overflow: hidden;
    position: relative;
 }
 .skill-progress {
    height: 100%;
    background: var(--accent-red);
-   border-radius: 5px;
    width: 0;
    transition: width 1.5s ease-in-out;
    position: relative;
@@ -325,7 +318,6 @@
 /* Services Section */
 #services {
    background-color: var(--card-bg);
-   border-radius: 10px;
    margin: 40px 0;
 }
 .services-grid {
@@ -338,7 +330,6 @@
    background: var(--dark-bg);
    padding: 35px 30px;
    border: 1px solid rgba(255, 255, 255, 0.1);
-   border-radius: 8px;
    transition: var(--transition);
    position: relative;
    overflow: hidden;
@@ -449,7 +440,6 @@
 .project-card {
    position: relative;
    height: 300px;
-   border-radius: 8px;
    overflow: hidden;
    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
    transition: var(--transition);
@@ -529,7 +519,6 @@
    background: rgba(230, 57, 70, 0.15);
    color: var(--accent-red);
    padding: 5px 12px;
-   border-radius: 20px;
    font-size: 0.8rem;
    font-weight: 500;
 }
@@ -560,7 +549,6 @@
    top: 15px;
    right: 15px;
    padding: 5px 12px;
-   border-radius: 20px;
    font-size: 0.8rem;
    font-weight: 600;
    z-index: 2;
@@ -611,7 +599,6 @@
 .social-contact-card {
    background: var(--dark-bg);
    padding: 30px;
-   border-radius: 8px;
    border: 1px solid rgba(255, 255, 255, 0.1);
    text-align: center;
    transition: var(--transition);
@@ -703,7 +690,6 @@
    background: rgba(46, 204, 113, 0.1);
    color: #2ecc71;
    padding: 8px 20px;
-   border-radius: 30px;
    font-weight: 600;
    margin-top: 10px;
 }
