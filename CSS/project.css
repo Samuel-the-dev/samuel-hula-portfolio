@@ -64,7 +64,6 @@
    align-items: center;
    height: 150px;
    background-color: var(--dark-bg);
-   border-radius: 10px;
    padding: 20px;
    transition: var(--transition);
 }
@@ -157,7 +156,6 @@
    background: rgba(230, 57, 70, 0.1);
    color: var(--accent-red);
    padding: 5px 15px;
-   border-radius: 20px;
    font-size: 0.9rem;
    font-weight: 400;
 }
@@ -165,7 +163,6 @@
    flex: 1;
    position: relative;
    overflow: hidden;
-   border-radius: 8px;
    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
    transition: var(--transition);
 }
@@ -204,7 +201,6 @@
    display: inline-flex;
    align-items: center;
    padding: 3px 10px;
-   border-radius: 20px;
    font-size: 0.85rem;
    font-weight: 600;
 }
