@@ -62,7 +62,6 @@
 /* Pricing section */
 #pricing {
    background-color: var(--card-bg);
-   padding: 80px 15%;
 }
 .pricing-title {
    text-align: center;
@@ -74,7 +73,7 @@
 }
 .pricing-cards {
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
    gap: 30px;
    margin-top: 50px;
 }
@@ -277,6 +276,26 @@
 }
 .about_me .wrapper figure.image img{
    width: 100%;
+}
+@media screen and (max-width: 900px){
+   .about_me .wrapper,
+   .about_me.reverse .wrapper{
+      flex-direction: column;
+   }
+   .about_me .wrapper aside.text{
+      width: 100%;
+   }
+   .about_me .wrapper figure.image{
+      width: 100%;
+      margin-top: 5%;
+   }
+   .about_me.reverse .section-title{
+      text-align: left;
+   }
+   .about_me.reverse .section-title h2::after{
+      left: 0;
+      right: auto;
+   }
 }
 @media screen and (max-width: 500px){
    .about_me .wrapper aside.text p{
