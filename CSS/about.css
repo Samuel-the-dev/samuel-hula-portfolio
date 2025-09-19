@@ -112,6 +112,18 @@
    transform: translateY(3px);
 }
 /* Responsive adjustments */
+@media screen and (max-width: 900px){
+   .about_me .wrapper{
+      flex-direction: column;
+   }
+   .about_me .wrapper aside.text{
+      width: 100%;
+   }
+   .about_me .wrapper figure.image{
+      width: 100%;
+      margin-top: 5%;
+   }
+}
 @media (max-width: 768px) {
    .cv-btn {
       padding: 10px 20px;
