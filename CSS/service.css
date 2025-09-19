@@ -81,7 +81,6 @@
 .pricing-card {
    background: linear-gradient(145deg, #131319, #0f0f14);
    border: 1px solid rgba(230, 57, 70, 0.2);
-   border-radius: 8px;
    padding: 40px 30px;
    text-align: center;
    transition: var(--transition);
@@ -196,7 +195,6 @@
    border-collapse: collapse;
    margin-top: 30px;
    background: var(--card-bg);
-   border-radius: 8px;
    overflow: hidden;
    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
