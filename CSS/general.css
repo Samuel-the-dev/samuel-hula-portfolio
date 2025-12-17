@@ -75,6 +75,8 @@ section{
    border-bottom: 1px solid rgba(230, 57, 70, 0.2);
 }
 .logo {
+   width: 70px;
+   max-height: 90%;
    font-family: 'Oswald', sans-serif;
    font-size: 1.8rem;
    font-weight: 600;
@@ -83,8 +85,8 @@ section{
    display: flex;
    align-items: center;
 }
-.logo span {
-   color: var(--accent-red);
+.logo img {
+   width: 100%;
 }
 .nav_bar{
    width: 30%;
