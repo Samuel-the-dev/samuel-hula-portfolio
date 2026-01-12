@@ -305,6 +305,87 @@
                </div>
          </div>
       </section>
+      <section class="design-manual-section">
+         <div class="container">
+            <div class="section-title">
+                  <h2>Design Manuál</h2>
+                  <p>Kompletný vizuálny manuál mojej osobnej značky a loga</p>
+            </div>
+            
+            <div class="design-manual-container">
+                  <div class="manual-preview">
+                     <!-- Preview of design manual pages -->
+                     <div class="preview-grid">
+                        <div class="preview-page active" data-page="1">
+                              <div class="page-content">
+                                 <h3>História a filozofia loga</h3>
+                                 <p>Logo vzniklo ako moderný a minimalistický symbol vychádzajúci z iniciál S a H...</p>
+                              </div>
+                        </div>
+                        <div class="preview-page" data-page="2">
+                              <div class="page-content">
+                                 <h3>Variácie loga</h3>
+                                 <p>Full verzia, hlavná verzia a ikona</p>
+                              </div>
+                        </div>
+                        <div class="preview-page" data-page="3">
+                              <div class="page-content">
+                                 <h3>Farebné kombinácie</h3>
+                                 <p>Dovolené a nedovolené farebné kombinácie</p>
+                              </div>
+                        </div>
+                        <div class="preview-page" data-page="4">
+                              <div class="page-content">
+                                 <h3>Farebná paleta</h3>
+                                 <p>Primárne, neutrálne a doplnkové farby</p>
+                              </div>
+                        </div>
+                     </div>
+                     
+                     <div class="preview-navigation">
+                        <button class="nav-btn prev-btn">
+                              <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="page-indicator">
+                              <span class="current-page">1</span> / <span class="total-pages">4</span>
+                        </div>
+                        <button class="nav-btn next-btn">
+                              <i class="fas fa-chevron-right"></i>
+                        </button>
+                     </div>
+                  </div>
+                  
+                  <div class="manual-info">
+                     <h3>O Design Manuáli</h3>
+                     <p>Tento manuál obsahuje kompletnú vizuálnu identitu mojej osobnej značky, vrátane:</p>
+                     <ul class="manual-features">
+                        <li><i class="fas fa-check"></i> História a filozofia loga</li>
+                        <li><i class="fas fa-check"></i> Variácie a použitie loga</li>
+                        <li><i class="fas fa-check"></i> Farebná paleta a kombinácie</li>
+                        <li><i class="fas fa-check"></i> Typografia a fonty</li>
+                        <li><i class="fas fa-check"></i> Príklady použitia</li>
+                     </ul>
+                     
+                     <div class="manual-actions">
+                        <a href="./images/dizajnmanual.pdf" download class="download-btn">
+                              <i class="fas fa-download"></i>
+                              Stiahnúť celý manuál (PDF)
+                        </a>
+                        <a href="./images/dizajnmanual.pdf" target="_blank" class="view-btn">
+                              <i class="fas fa-external-link-alt"></i>
+                              Zobraziť v prehliadači
+                        </a>
+                     </div>
+                     
+                     <div class="file-info">
+                        <p><strong>Formát:</strong> PDF</p>
+                        <p><strong>Veľkosť:</strong> 1.2 MB</p>
+                        <p><strong>Strany:</strong> 9</p>
+                     </div>
+                  </div>
+            </div>
+         </div>
+      </section>
    </main>
    <footer id="footer">
       <a href="about.html#landing_page" class="back-to-top">
@@ -358,7 +439,103 @@
       </div>
    </footer>
    <script>
+      const manualNav = {
+            init() {
+               this.pages = document.querySelectorAll('.preview-page');
+               this.currentPage = 1;
+               this.totalPages = this.pages.length;
+               
+               this.prevBtn = document.querySelector('.prev-btn');
+               this.nextBtn = document.querySelector('.next-btn');
+               this.currentPageSpan = document.querySelector('.current-page');
+               this.totalPagesSpan = document.querySelector('.total-pages');
+               
+               this.totalPagesSpan.textContent = this.totalPages;
+               
+               this.setupEventListeners();
+               this.updateNavigation();
+            },
+            
+            setupEventListeners() {
+               // Page click
+               this.pages.forEach(page => {
+                     page.addEventListener('click', () => {
+                        const pageNum = parseInt(page.getAttribute('data-page'));
+                        this.goToPage(pageNum);
+                     });
+               });
+               
+               // Navigation buttons
+               this.prevBtn.addEventListener('click', () => this.prevPage());
+               this.nextBtn.addEventListener('click', () => this.nextPage());
+            },
+            
+            goToPage(pageNum) {
+               this.currentPage = pageNum;
+               this.updatePages();
+               this.updateNavigation();
+            },
+            
+            prevPage() {
+               if (this.currentPage > 1) {
+                     this.currentPage--;
+                     this.updatePages();
+                     this.updateNavigation();
+               }
+            },
+            
+            nextPage() {
+               if (this.currentPage < this.totalPages) {
+                     this.currentPage++;
+                     this.updatePages();
+                     this.updateNavigation();
+               }
+            },
+            
+            updatePages() {
+               this.pages.forEach(page => {
+                     const pageNum = parseInt(page.getAttribute('data-page'));
+                     
+                     page.classList.remove('active');
+                     
+                     if (pageNum === this.currentPage) {
+                        page.classList.add('active');
+                     }
+               });
+            },
+            
+            updateNavigation() {
+               this.currentPageSpan.textContent = this.currentPage;
+               
+               // Disable/enable buttons
+               this.prevBtn.disabled = this.currentPage === 1;
+               this.nextBtn.disabled = this.currentPage === this.totalPages;
+               
+               // Update button styles
+               if (this.prevBtn.disabled) {
+                     this.prevBtn.style.opacity = '0.3';
+                     this.prevBtn.style.cursor = 'not-allowed';
+               } else {
+                     this.prevBtn.style.opacity = '1';
+                     this.prevBtn.style.cursor = 'pointer';
+               }
+               
+               if (this.nextBtn.disabled) {
+                     this.nextBtn.style.opacity = '0.3';
+                     this.nextBtn.style.cursor = 'not-allowed';
+               } else {
+                     this.nextBtn.style.opacity = '1';
+                     this.nextBtn.style.cursor = 'pointer';
+               }
+            }
+         };
+      
       document.addEventListener('DOMContentLoaded', function() {
+         // Initialize design manual navigation
+         if (document.querySelector('.design-manual-section')) {
+            manualNav.init();
+         }
+         
          // Animate skill bars on page load
          const skillBars = document.querySelectorAll('.skill-progress');
          
