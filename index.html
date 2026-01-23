@@ -18,11 +18,39 @@
    <!-- Google tag (gtag.js) -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9TQKQQW3T"></script>
    <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'G-H9TQKQQW3T');
+      // Initialize dataLayer
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      // Check cookie consent before initializing
+      function getCookie(name) {
+         const nameEQ = name + "=";
+         const ca = document.cookie.split(';');
+         for (let i = 0; i < ca.length; i++) {
+               let c = ca[i];
+               while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+               if (c.indexOf(nameEQ) === 0) return decodeURIComponent(c.substring(nameEQ.length, c.length));
+         }
+         return null;
+      }
+      
+      const consent = getCookie('cookie_consent');
+      if (consent) {
+         const preferences = JSON.parse(consent);
+         if (preferences.analytics) {
+               gtag('config', 'G-H9TQKQQW3T', {
+                  'anonymize_ip': true,
+                  'allow_google_signals': false,
+                  'allow_ad_personalization_signals': false
+               });
+         } else {
+               window[`ga-disable-G-H9TQKQQW3T`] = true;
+         }
+      } else {
+         // Default to disabled until user makes a choice
+         window[`ga-disable-G-H9TQKQQW3T`] = true;
+      }
    </script>
    <link rel="favicon" href="./images/SH_logo.png">
    <link rel="shortcut icon" href="./images/SH_logo.png" type="image/x-icon">
@@ -30,6 +58,7 @@
    <link rel="stylesheet" href="./CSS/styles.css">
    <script src="./javascript/fly-in.js"></script>
    <script src="./javascript/line.js"></script>
+   <script src="./javascript/cookie-consent.js"></script>
 </head>
 <body>
    <div class="progress-container">
@@ -86,6 +115,7 @@
          <div class="item item8"></div>
          <div class="item item9"></div>
          <div class="item item10"></div>
+         <div class="item item11"></div>
       </div>
       </section>
       <section id="about_me">

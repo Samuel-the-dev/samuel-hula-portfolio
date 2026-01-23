@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cookie Policy | Samuel Hula Portfolio</title>
+    <meta name="description" content="Cookie policy for Samuel Hula's portfolio website">
+    <meta name="author" content="Samuel Hula">
+    <meta name="robots" content="noindex, follow">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/general.css">
+    <style>
+        .cookie-policy-container {
+            margin-top: 10vh;
+            padding: 10vh 15% 5%;
+            min-height: 100vh;
+            background-color: var(--dark-bg);
+        }
+        .policy-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .policy-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .policy-header .last-updated {
+            color: var(--accent-red);
+            font-size: 1.1rem;
+            margin-top: 1rem;
+        }
+        .policy-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .policy-section {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-red);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .policy-section h2 {
+            color: var(--accent-red);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .policy-section h2 i {
+            margin-right: 10px;
+        }
+        .policy-section p {
+            color: var(--text-gray);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        .policy-section ul {
+            list-style-type: none;
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+        .policy-section ul li {
+            color: var(--text-gray);
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .policy-section ul li:before {
+            content: "•";
+            color: var(--accent-red);
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: rgba(255, 255, 255, 0.02);
+        }
+        .cookie-table th,
+        .cookie-table td {
+            padding: 1rem;
+            text-align: left;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .cookie-table th {
+            background: rgba(230, 57, 70, 0.1);
+            color: var(--text-light);
+            font-family: 'Oswald', sans-serif;
+            font-weight: 600;
+        }
+        .cookie-table td {
+            color: var(--text-gray);
+        }
+        .cookie-category {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+        .category-necessary {
+            background: rgba(46, 204, 113, 0.1);
+            color: #2ecc71;
+        }
+        .category-analytics {
+            background: rgba(52, 152, 219, 0.1);
+            color: #3498db;
+        }
+        .category-marketing {
+            background: rgba(155, 89, 182, 0.1);
+            color: #9b59b6;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        .action-btn {
+            background: transparent;
+            color: var(--accent-red);
+            border: 2px solid var(--accent-red);
+            padding: 12px 25px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .action-btn:hover {
+            background: var(--accent-red);
+            color: var(--text-light);
+        }
+        .back-to-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--accent-red);
+            text-decoration: none;
+            margin-top: 2rem;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            transition: var(--transition);
+        }
+        .back-to-home:hover {
+            transform: translateX(-5px);
+        }
+        a{
+            text-decoration: none;
+            color: var(--text-light);
+        }
+        @media (max-width: 768px) {
+            .cookie-policy-container {
+                padding: 80px 5% 5%;
+            }
+            .policy-header h1 {
+                font-size: 2.2rem;
+            }
+            .policy-section {
+                padding: 1.5rem;
+            }
+            .cookie-table {
+                display: block;
+                overflow-x: auto;
+            }
+            .action-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="scrollProgress"></div>
+    </div>
+    
+    <div class="floating-shapes">
+        <div class="shape square"></div>
+        <div class="shape triangle"></div>
+        <div class="shape square"></div>
+        <div class="shape triangle"></div>
+    </div>
+    
+    <header id="header">
+        <a href="index.html" class="logo">
+            <figure class="logo">
+                <img src="./images/SH_logo.png" alt="Samuel Hula Logo">
+            </figure>
+        </a>
+        <nav class="nav_bar">
+            <ul>
+                <li><a href="index.html">Domov</a></li>
+                <li><a href="about.html">O mne</a></li>
+                <li><a href="services.html">Služby</a></li>
+                <li><a href="projects.html">Projekty</a></li>
+            </ul>
+        </nav>
+        <a href="index.html#contact" class="contact-btn">Kontaktujte ma</a>
+    </header>
+    
+    <main class="cookie-policy-container">
+        <div class="policy-header">
+            <h1><i class="fas fa-cookie-bite"></i> Cookie Policy</h1>
+            <p>Last Updated: <span class="last-updated">December 2024</span></p>
+        </div>
+        
+        <div class="policy-content">
+            <section class="policy-section">
+                <h2><i class="fas fa-info-circle"></i> What Are Cookies</h2>
+                <p>Cookies are small text files that are placed on your computer or mobile device when you visit our website. They are widely used to make websites work more efficiently and provide information to the owners of the site.</p>
+                <p>This Cookie Policy explains how Samuel Hula Portfolio uses cookies and similar technologies to recognize you when you visit our website at <a href="https://samuelhula.github.io/Samuel_Hula_portfolio/">https://samuelhula.github.io/Samuel_Hula_portfolio/</a>.</p>
+            </section>
+            
+            <section class="policy-section">
+                <h2><i class="fas fa-list"></i> Types of Cookies We Use</h2>
+                <table class="cookie-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Purpose</th>
+                            <th>Examples</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="cookie-category category-necessary">Necessary</span></td>
+                            <td>Essential for the website to function properly</td>
+                            <td>Cookie consent preferences, security features</td>
+                            <td>Up to 1 year</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cookie-category category-analytics">Analytics</span></td>
+                            <td>Help us understand how visitors interact with our website</td>
+                            <td>Google Analytics, page views, traffic sources</td>
+                            <td>Up to 2 years</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cookie-category category-marketing">Marketing</span></td>
+                            <td>Track visitors across websites for targeted advertising</td>
+                            <td>Social media pixels, retargeting cookies</td>
+                            <td>Up to 1 year</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section class="policy-section">
+                <h2><i class="fas fa-cogs"></i> How We Use Cookies</h2>
+                <p>We use cookies for the following purposes:</p>
+                <ul>
+                    <li><strong>Essential Cookies:</strong> These are necessary for the website to function and cannot be switched off. They are usually set in response to actions made by you such as setting your privacy preferences.</li>
+                    <li><strong>Analytics Cookies:</strong> These allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us know which pages are the most and least popular.</li>
+                    <li><strong>Marketing Cookies:</strong> These may be set through our site by our advertising partners to build a profile of your interests.</li>
+                </ul>
+            </section>
+            
+            <section class="policy-section">
+                <h2><i class="fas fa-user-cog"></i> Managing Your Cookie Preferences</h2>
+                <p>You have the right to decide whether to accept or reject cookies. You can manage your cookie preferences by:</p>
+                <ul>
+                    <li>Clicking on the cookie settings button in our cookie consent banner</li>
+                    <li>Using the browser controls to manage cookies (see below)</li>
+                    <li>Using the controls on this page to manage your preferences</li>
+                </ul>
+                
+                <h3 style="margin-top: 2rem; color: var(--text-light); font-size: 1.3rem;">Browser Controls</h3>
+                <p>Most web browsers allow you to control cookies through their settings preferences. However, limiting cookies may affect your experience on our website.</p>
+                
+                <div class="action-buttons">
+                    <button class="action-btn" onclick="resetCookieConsent()">
+                        <i class="fas fa-redo"></i> Reset Cookie Preferences
+                    </button>
+                    <button class="action-btn" onclick="showCookieSettings()">
+                        <i class="fas fa-sliders-h"></i> Manage Cookies
+                    </button>
+                    <a href="javascript:history.back()" class="action-btn">
+                        <i class="fas fa-arrow-left"></i> Go Back
+                    </a>
+                </div>
+            </section>
+            
+            <section class="policy-section">
+                <h2><i class="fas fa-shield-alt"></i> Third-Party Cookies</h2>
+                <p>Some cookies are placed by third-party services that appear on our pages, including:</p>
+                <ul>
+                    <li><strong>Google Analytics:</strong> We use Google Analytics to collect information about how visitors use our website.</li>
+                    <li><strong>Google Tag Manager:</strong> Helps manage tracking tags and scripts.</li>
+                </ul>
+                <p>We do not control these third-party cookies and they are subject to the privacy policies of these third parties.</p>
+            </section>
+            
+            <section class="policy-section">
+                <h2><i class="fas fa-question-circle"></i> Contact Us</h2>
+                <p>If you have any questions about our use of cookies, please contact us:</p>
+                <ul>
+                    <li>Email: <a href="mailto:samuel.hula.dev@gmail.com">samuel.hula.dev@gmail.com</a></li>
+                    <li>Portfolio: <a href="index.html">Samuel Hula Portfolio</a></li>
+                </ul>
+            </section>
+            
+            <a href="index.html" class="back-to-home">
+                <i class="fas fa-home"></i> Back to Home
+            </a>
+        </div>
+    </main>
+    
+    <footer id="footer">
+        <a href="cookie-policy.html#header" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <div class="footer-grid">
+            <div class="footer-col footer-about">
+                <a href="index.html" class="footer-logo">
+                    <figure class="logo_footer">
+                        <img src="./images/SH_logo.png" style="width: 100px;" alt="Samuel Hula Logo">
+                    </figure>
+                </a>
+                <p>Slovak web developer & digital creator focused on building modern, responsive web applications with cutting-edge technologies.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/samuel-hula-9a3534384/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Samuel-the-dev"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/samuel.hula/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col footer-links">
+                <h4>Odkazy</h4>
+                <ul>
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="about.html">O mne</a></li>
+                    <li><a href="services.html">Služby</a></li>
+                    <li><a href="projects.html">Projekty</a></li>
+                    <li><a href="cookie-policy.html"><i class="fas fa-cookie"></i> Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contact">
+                <h4>Kontakt</h4>
+                <ul>
+                    <li>
+                        <i class="fab fa-instagram"></i>
+                        <span><strong>Instagram: </strong><a href="https://www.instagram.com/samuel.hula/">@samuel.hula</a></span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span><strong>Súkromný Email: </strong><a href="mailto:samuel.hula.dev@gmail.com">samuel.hula.dev@gmail.com</a></span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span><strong>Pracovný Email: </strong><a href="mailto:samuel_hula_dev@proton.me">samuel_hula_dev@proton.me</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; 2025 Samuel Hula. All Rights Reserved. | <a href="cookie-policy.html" style="color: var(--accent-red);">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Function to show cookie settings from cookie policy page
+        function showCookieSettings() {
+            if (typeof showCustomizeModal === 'function') {
+                showCustomizeModal();
+            } else {
+                // If cookie-consent.js isn't loaded, redirect to home page with cookie modal
+                localStorage.setItem('showCookieModal', 'true');
+                window.location.href = 'index.html';
+            }
+        }
+        
+        // Function to reset cookie consent
+        function resetCookieConsent() {
+            if (confirm('Are you sure you want to reset all cookie preferences? This will show the cookie consent banner again.')) {
+                document.cookie = "cookie_consent=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                document.cookie = "cookie_consent_date=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                alert('Cookie preferences have been reset. Reloading page...');
+                location.reload();
+            }
+        }
+    </script>
+    <script src="./javascript/fly-in.js"></script>
+    <script src="./javascript/line.js"></script>
+</body>
+</html>
