@@ -15,6 +15,8 @@
    <meta property="og:description" content="Student web developer portfolio page, showing his previous projects and skills.">
    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="preload" href="./images/SH_logo.png" as="image">
+   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
    <!-- Google tag (gtag.js) -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9TQKQQW3T"></script>
    <script>
@@ -54,7 +56,6 @@
    </script>
    <link rel="favicon" href="./images/SH_logo.png">
    <link rel="shortcut icon" href="./images/SH_logo.png" type="image/x-icon">
-   <link rel="shortcut icon" href="./images/SH_logo.png" type="image/x-icon">
    <link rel="stylesheet" href="./CSS/general.css">
    <link rel="stylesheet" href="./CSS/about.css">
 </head>
@@ -73,20 +74,20 @@
       <div class="shape triangle"></div>
    </div>
    <header id="header">
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo" title="Domov">
          <figure class="logo">
             <img src="./images/SH_logo.png" alt="Samuel Hula Logo" fetchpriority="high" loading="lazy" decoding="async">
          </figure>
       </a>
       <nav class="nav_bar">
             <ul>
-               <li><a href="index.html">Domov</a></li>
-               <li><a href="about.html">O mne</a></li>
-               <li><a href="services.html">Služby</a></li>
-               <li><a href="projects.html">Projekty</a></li>
+               <li><a href="index.html" title="Domov">Domov</a></li>
+               <li><a href="about.html" title="O mne">O mne</a></li>
+               <li><a href="services.html" title="Služby">Služby</a></li>
+               <li><a href="projects.html" title="Projekty">Projekty</a></li>
             </ul>
       </nav>
-      <a href="index.html#contact" class="contact-btn">Kontaktujte ma</a>
+      <a href="index.html#contact" class="contact-btn" title="Kontaktujte ma">Kontaktujte ma</a>
    </header>
    <main id="main">
       <section id="landing_page">
@@ -393,11 +394,11 @@
                      </ul>
                      
                      <div class="manual-actions">
-                        <a href="./images/dizajnmanual.pdf" download class="download-btn">
+                        <a href="./images/dizajnmanual.pdf" download class="download-btn" title="Stiahnúť">
                               <i class="fas fa-download"></i>
                               Stiahnúť celý manuál (PDF)
                         </a>
-                        <a href="./images/dizajnmanual.pdf" target="_blank" class="view-btn">
+                        <a href="./images/dizajnmanual.pdf" target="_blank" class="view-btn" title="Zobraziť">
                               <i class="fas fa-external-link-alt"></i>
                               Zobraziť v prehliadači
                         </a>
@@ -414,30 +415,30 @@
       </section>
    </main>
    <footer id="footer">
-      <a href="about.html#landing_page" class="back-to-top">
+      <a href="about.html#landing_page" class="back-to-top" title="Up">
          <i class="fas fa-arrow-up"></i>
       </a>
       <div class="footer-grid">
          <div class="footer-col footer-about">
-            <a href="index.html" class="footer-logo">
+            <a href="index.html" class="footer-logo" title="Domov">
                <figure class="logo_footer">
                   <img src="./images/SH_logo.png" style="width: 100px;" alt="Samuel Hula Logo">
                </figure>
             </a>
             <p>Slovak web developer & digital creator focused on building modern, responsive web applications with cutting-edge technologies.</p>
             <div class="social-icons">
-               <a href="https://www.linkedin.com/in/samuel-hula-9a3534384/"><i class="fab fa-linkedin-in"></i></a>
-               <a href="https://github.com/Samuel-the-dev"><i class="fab fa-github"></i></a>
-               <a href="https://www.instagram.com/samuel.hula/"><i class="fab fa-instagram"></i></a>
+               <a href="https://www.linkedin.com/in/samuel-hula-9a3534384/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+               <a href="https://github.com/Samuel-the-dev" title="Git-Hub"><i class="fab fa-github"></i></a>
+               <a href="https://www.instagram.com/samuel.hula/" title="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
          </div>
          <div class="footer-col footer-links">
             <h4>Odkazy</h4>
             <ul>
-               <li><a href="index.html">Domov</a></li>
-               <li><a href="about.html">O mne</a></li>
-               <li><a href="services.html">Služby</a></li>
-               <li><a href="projects.html">Projekty</a></li>
+               <li><a href="index.html" title="Domov">Domov</a></li>
+               <li><a href="about.html" title="O mne">O mne</a></li>
+               <li><a href="services.html" title="Služby">Služby</a></li>
+               <li><a href="projects.html" title="Projekty">Projekty</a></li>
             </ul>
          </div>
          <div class="footer-col footer-contact">
@@ -445,15 +446,15 @@
             <ul>
                <li>
                   <i class="fab fa-instagram"></i>
-                  <span><strong>Instagram: </strong><a href="https://www.instagram.com/samuel.hula/">@samuel.hula</a></span>
+                  <span><strong>Instagram: </strong><a href="https://www.instagram.com/samuel.hula/" title="Instagram">@samuel.hula</a></span>
                </li>
                <li>
                   <i class="fas fa-envelope"></i>
-                  <span><strong>Súkromný Email: </strong><a href="mailto:samuel.hula.dev@gmail.com">samuel.hula.dev@gmail.com</a></span>
+                  <span><strong>Súkromný Email: </strong><a href="mailto:samuel.hula.dev@gmail.com" title="Email">samuel.hula.dev@gmail.com</a></span>
                </li>
                <li>
                   <i class="fas fa-envelope"></i>
-                  <span><strong>Pracovný Email: </strong><a href="mailto:samuel_hula_dev@proton.me">samuel_hula_dev@proton.me</a></span>
+                  <span><strong>Pracovný Email: </strong><a href="mailto:samuel_hula_dev@proton.me" title="Email">samuel_hula_dev@proton.me</a></span>
                </li>
             </ul>
          </div>
@@ -464,7 +465,7 @@
          </div>
       </div>
    </footer>
-   <script>
+   <script defer>
       const manualNav = {
             init() {
                this.pages = document.querySelectorAll('.preview-page');
@@ -591,8 +592,8 @@
          });
       });
    </script>
-   <script src="./javascript/fly-in.js"></script>
-   <script src="./javascript/line.js"></script>
-   <script src="./javascript/cookie-consent.js"></script>
+   <script src="./javascript/fly-in.js" defer></script>
+   <script src="./javascript/line.js" defer></script>
+   <script src="./javascript/cookie-consent.js" defer></script>
 </body>
 </html>
