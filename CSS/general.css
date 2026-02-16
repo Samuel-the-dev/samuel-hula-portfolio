@@ -54,6 +54,11 @@ h2::after {
 section{
    padding: 5% 15%;
 }
+svg{
+   fill: var(--accent-red);
+   width: 20px;
+   height: 20px;
+}
 /*Navigation bar*/
 #header{
    width: 100%;
